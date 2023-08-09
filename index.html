@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="rps.js" defer></script>
+        <title>Rock, Paper, Scissors!</title>
+    </head>
+    <body>
+        <p>Player: <span id="playerScore"></span><br>Computer: <span id="computerScore"></span></p>
+        <div class="controls">
+            <h1>The player chooses...<span id="playerChoice"></span></h1>
+            <div id="playerControls">
+                <img class="playerButton" src="img/rock.png" onclick="play('ROCK')">
+                <img class="playerButton" src="img/paper.png" onclick="play('PAPER')">
+                <img class="playerButton" src="img/scissors.png" onclick="play('SCISSORS')">
+            </div>
+        </div>
+
+        <div class="controls">
+            <h1>The computer chooses...<span id="computerChoice"></span></h1>
+            <img id="computerImg" src="img/question-mark.png">
+        </div>
+    </body>
